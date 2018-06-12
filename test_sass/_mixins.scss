@@ -1,0 +1,34 @@
+@mixin titulos ($fsize , $fw){
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: $fsize; 
+    font-weight: $fw; 
+    color: blue;
+    
+}
+
+@mixin boxAlto ($alto, $color) {
+    height: $alto;
+    width: 100px;
+    background-color: $color;
+    display:inline-block;
+
+    -moz-box-border-radius:50%;
+    border-radius:50%;
+    border-radius: 50%;
+
+    -moz-box-shadow: 0 5px 10px #555;
+    -webkit-box-shadow: 0 5px 10px #555;
+    box-shadow: 0 5px 10px #555;
+
+}
+ 
+.box {
+    @include boxAlto(100px, red)
+}
+.box.a {
+@include boxAlto(30px, green);
+}
+.box.b{
+    @include boxAlto(300px, blue); 
+}

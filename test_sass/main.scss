@@ -1,0 +1,75 @@
+@import "_mixins.scss";
+
+// variables
+$color1 : #ccaabb;
+$todo: 50%;
+
+
+h1 {
+    width:$todo *2; 
+    color: yellow;
+    &:hover{
+        background-color: $color1;
+        @include titulos (2em, bold);
+    }
+}
+
+
+@mixin boxAlto ($alto:300px) {
+    height: $alto;
+    width: 100px;
+    background-color: red;
+    display:inline-block;
+
+    -moz-box-border-radius:50%;
+    border-radius:50%;
+    border-radius: 50%;
+
+    -moz-box-shadow: 0 5px 10px #555;
+    -webkit-box-shadow: 0 5px 10px #555;
+    box-shadow: 0 5px 10px #555;
+
+}
+ 
+
+.box .a {
+@include boxAlto(30px);
+}
+.box .b{
+    @include boxAlto;
+}
+
+/*
+
+reglas inmportantes
+
+
+@import
+$variables
+
+@media queries
+
+funciones en sass para paletas de colores.
+
+partials
+
+
+*/
+
+
+
+/* 
+pendientes:
+
+
+@mixin
+@extend
+%placeholder
+interpolacion de variables 
+
+CONDICIONALES
+
+@if { } @else if{} @else {}
+directriz
+@while
+*/

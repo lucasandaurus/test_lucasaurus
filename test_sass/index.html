@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>sass mix-in</h1>
+    <p>a mixin lets you make groups of css declarations that you want to reuse throughout your site.</p>
+    <div class="box a">a</div>
+    <div class="box b">b</div>
+    <div class="box">c</div>
+    <div class="box">d</div>
+</div>
+
+
+
+
+    <h1>test 1</h1>
+    <p>primer parrafo</p>
+    <p>segundo parrafo</p>
+    <p>gtercero parrafo</p>
+    <p>cuarto parrafo</p>
+    <p>quinto parrafo</p>
+
+
+    <p>selectores (1)</p>
+<ul>
+    <li>de etiqueta (etiqueta)</li>
+    <li>de clase (.clase)</li>
+    <li>de ID (#id)</li>
+    <li>de grupo (etiqueta1, etiqueta2, etiqueta3, etc)</li>
+    <li>universal (*)</li>
+</ul>
+<p>selectores (2)</p>
+<ul>
+    <li>descendientes</li>
+</ul>
+
+jerarquias de etiquetas 
+<br>
+html
+<br> |_ head
+<br> &nbsp;|_title
+<br> |_ body
+<br>&nbsp;|_ h1
+<br>&nbsp;|_ p
+<br>&nbsp;&nbsp;|_ strong  
+<br><br>
+estilos descendientes, aquellos que son hijos de.
+<br>  por ejemplo:
+<br>  aquellos links que estan dentro de listas solamente <br>
+li a {} <br>
+
+
+
+
+
+
+<p>
+    seleccion de hijos directos >
+</p>
+<p>
+    selector de leemnetos contiguos +
+</p>
+<p>selector primero de una lista :first-child</p>
+<p>
+    selector ultimo elemento hijo :last-child
+</p>
+<p>
+    :first-line
+</p>
+<p> atributos con comienzo de una palabra sera:   a[id|=top] {} (sera, a los a que tengan id cominece con top)</p>
+
+<p> atributos con comienzo de una palabra sera:   a[title~=top] {} (sera, a los a que tengan title contenga palabra top)</p>
+
+
+
+<p>:before y :after</p>
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{Respuesta}}</title>
+</head>
+<body ng-app>
+<div class="container"
+	Entiendes el contenido de este libro? 
+	<input type="checkbox" ng-model="respuesta"> 
+	<div ng-hide="respuesta"> 
+		<h2>Me esforzare más!</h2> 
+	</div> 14 <div ng-show="respuesta"> 
+		<h2>Felicidades!</h2> 
+	</div> 
+</div> 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.js"></script> 
+</body> 
+</html>

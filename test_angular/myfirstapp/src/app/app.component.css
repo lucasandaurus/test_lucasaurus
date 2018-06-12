@@ -1,0 +1,14 @@
+.component2 {
+    background: #333333;
+    padding: 30px;
+ color:white;   
+}
+
+
+button.btn {
+    padding:20px;
+    color:white;
+    background: brown;
+    display:block;
+    margin:3px;
+}
