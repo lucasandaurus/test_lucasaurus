@@ -1,0 +1,41 @@
+ls  lita directorio y archivos
+pwd ver en que ruta estamos trabajando
+cls limpia la consola
+
+- git siempre comienza con git
+- luego el comando de git que en este caso, para inciar git en un proyecto de ber INIT
+la consola, a la altura de la carpeta que quiero sincronizar, es:
+git init. (se crea una carpeta vacia llamada .git -  es una carpeta de sistema, oculta)
+- git status : > ver los archivos que stamos trabajando.
+
+- git add <fileName.formato>
+
+- git commit
+configurar id
+- git config --global user.email (emails......)
+- git config --global user.name (nombre del comiteador)
+
+- git commit (nuevamente) y se escribe un mensaje (previo teclear i). luego del mensaje esc, y el comando :wq
+
+-git log (conseguimos un hash de caracteres) hash, revision log
+
+-git checkout -- <file.formato> (revierte cambios del archivo seleccionado)
+
+
+-git diff
+
+agregamos texto o arvhivos a ignorar
+simplemente creamos el file .gitignore dentro del cual se agregan los nombres de las carpetas y/o files que quiero ignorar.
+si los files estan en la carpta, solo agreganod la carpeta se ignora su contenido.
+
+version alternativa del commit:
+- git branch <nombre>
+(creamos un branch y nos movemos a ese branch)
+ o bien -git branch (listamos los branchs que hay disponibles)
+ 
+con esto nos movemos entre los branchs creados -git checkout <nombre del branch>
+
+-git remote add origin (url del repositorio creado)
+para poder conectar una branch con el repositorio nuevo creado en "github" desde la consola
+-git push -u orign master 
+pushea el commit del branch recien conectado con el github (seguramente pide id y pass)
